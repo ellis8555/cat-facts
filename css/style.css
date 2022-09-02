@@ -4,7 +4,45 @@ about: Kitties
 */
 
 body {
-    position: relative;
     background-color: blueviolet;
+    padding-top: 3%;
+    color:lightgrey
 }
 
+h1 {
+color:lightgrey;
+}
+
+img {
+width:30%;
+border-radius: 2%;
+object-fit: cover;
+float: right;
+margin-right: 10%;
+margin-bottom: 5%;
+}
+
+input {
+    width: 15vw;
+    height: 5vh;
+    background-color:darkmagenta;
+    color: darkgrey;
+}
+
+#pageHeading {
+    margin-left: 20%;
+    padding: .25%;
+    border-radius: 2%;
+    width: fit-content;
+    text-align: center;
+    float:left
+}
+
+#factContainer {
+    clear:both;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size:x-large;
+    color:white;
+}
