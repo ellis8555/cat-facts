@@ -1,5 +1,8 @@
 // get button when pressed will fetch and display a new cat fact
-const button = document.querySelector("button");
+const getFactButton = document.querySelector("button");
+
+// display new cat fact when pressing 'Get fact' button
+getFactButton.addEventListener("click", getCatFact);
 
 // get element to display cat fact in
 const factElement = document.querySelector("#catFact p");
@@ -19,6 +22,3 @@ async function getCatFact() {
 
 // display fact on initial page visit
 getCatFact();
-
-// display new cat fact when pressing 'Get fact' button
-button.addEventListener("click", getCatFact);
