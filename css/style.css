@@ -4,6 +4,7 @@ about: Kitties
 */
 
 body {
+    position: relative;
     background-color: blueviolet;
 }
 
