@@ -16,7 +16,14 @@ about: Kitties
 
 #breedContainer {
     font-size:x-large;
+    background-color:darkseagreen;
+    border-radius: 5px;
     color:white;
+    width: 50vh;
+    margin-top: 15vh;
+    margin-left: 5vh;
+    padding: 2%;
+
 }
 
 #factContainer {
@@ -36,7 +43,7 @@ img[alt='No kittie for you!'] {
     object-fit: cover;
     float: right;
     margin-right: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     }
     
 /* plain HTML tag styles */
@@ -51,9 +58,22 @@ h1 {
 color:lightgrey;
 }
 
-button {
+/* buttons */
+
+#factContainer button {
     width: 15vw;
     height: 5vh;
     background-color:darkmagenta;
     color: darkgrey;
+}
+
+/* replace kittie button */
+button {
+    float: right;
+    clear: both;
+    margin-right: 15%;
+    width: 15vw;
+    height: 5vh;
+    background-color:darkmagenta;
+    color: darkgrey; 
 }
