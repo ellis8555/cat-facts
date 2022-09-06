@@ -90,9 +90,9 @@ async function getRandomImageOfBreed() {
   // select a random breed object from the available options
   const getRandomBreed = data[getRandomNumber];
   // get the breeds name
-  const breed = await getRandomBreed.name;
+  const breed = getRandomBreed.name;
   // get a description of the breed
-  const description = await getRandomBreed.description;
+  const description = getRandomBreed.description;
   displayCatDescription(description);
   // checks if there is an image for this breed
   const isImage = "image" in getRandomBreed;
