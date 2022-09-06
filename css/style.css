@@ -39,6 +39,7 @@ about: Kitties
 }
 
 /* HTML ELEMENTS VIA ATTRIBUTE */
+
 img[alt='No kittie for you!'] {
     width:30%;
     height: 35vh;
@@ -61,6 +62,10 @@ h1 {
 color:lightgrey;
 }
 
+p {
+    text-align: justify;
+}
+
 /* BUTTONS */
 
 #factContainer button {
@@ -71,6 +76,7 @@ color:lightgrey;
 }
 
 /* replace kittie button */
+
 button {
     float: right;
     clear: both;
