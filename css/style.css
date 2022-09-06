@@ -3,6 +3,34 @@ author: Lonnie
 about: Kitties
 */
 
+/* ID styles */
+
+#pageHeading {
+    margin-left: 20%;
+    padding: .25%;
+    border-radius: 2%;
+    width: fit-content;
+    text-align: center;
+    float:left
+}
+
+#breedContainer {
+    font-size:x-large;
+    color:white;
+}
+
+#factContainer {
+    clear:both;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size:x-large;
+    color:white;
+}
+
+
+/* HTML tag styles */
+
 body {
     background-color: blueviolet;
     padding-top: 3%;
@@ -27,22 +55,4 @@ button {
     height: 5vh;
     background-color:darkmagenta;
     color: darkgrey;
-}
-
-#pageHeading {
-    margin-left: 20%;
-    padding: .25%;
-    border-radius: 2%;
-    width: fit-content;
-    text-align: center;
-    float:left
-}
-
-#factContainer {
-    clear:both;
-    width: 50%;
-    margin: auto;
-    text-align: center;
-    font-size:x-large;
-    color:white;
 }
