@@ -28,8 +28,18 @@ about: Kitties
     color:white;
 }
 
-
-/* HTML tag styles */
+/* HTML tags via attribute */
+img[alt='No kittie for you!'] {
+    width:30%;
+    height: 35vh;
+    border-radius: 2%;
+    object-fit: cover;
+    float: right;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    }
+    
+/* plain HTML tag styles */
 
 body {
     background-color: blueviolet;
@@ -39,15 +49,6 @@ body {
 
 h1 {
 color:lightgrey;
-}
-
-img {
-width:30%;
-border-radius: 2%;
-object-fit: cover;
-float: right;
-margin-right: 10%;
-margin-bottom: 5%;
 }
 
 button {
