@@ -3,7 +3,7 @@ author: Lonnie
 about: Kitties
 */
 
-/* ID styles */
+/* ID STYLES */
 
 #pageHeading {
     margin-left: 20%;
@@ -23,7 +23,10 @@ about: Kitties
     margin-top: 15vh;
     margin-left: 5vh;
     padding: 2%;
+}
 
+#breedContainer span{
+    color:blue;
 }
 
 #factContainer {
@@ -35,7 +38,7 @@ about: Kitties
     color:white;
 }
 
-/* HTML tags via attribute */
+/* HTML ELEMENTS VIA ATTRIBUTE */
 img[alt='No kittie for you!'] {
     width:30%;
     height: 35vh;
@@ -46,7 +49,7 @@ img[alt='No kittie for you!'] {
     margin-bottom: 1%;
     }
     
-/* plain HTML tag styles */
+/* PLAIN HTML TAGS */
 
 body {
     background-color: blueviolet;
@@ -58,7 +61,7 @@ h1 {
 color:lightgrey;
 }
 
-/* buttons */
+/* BUTTONS */
 
 #factContainer button {
     width: 15vw;
