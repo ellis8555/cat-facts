@@ -3,6 +3,9 @@
 // get array of buttons on the page
 const buttons = document.querySelectorAll("button");
 
+// name the buttons from array of buttons
+const [replaceKittieButton, randomFactButton] = buttons;
+
 // get the image element used to display the pages image and random images
 const imageHolder = document.querySelector('img[alt="No kittie for you!"]');
 
@@ -11,11 +14,8 @@ const imageHolder = document.querySelector('img[alt="No kittie for you!"]');
 // display fact on initial page visit
 getCatFact();
 
-// get button when pressed will fetch and display a new cat fact
-const getFactButton = buttons[1];
-
 // display new cat fact when pressing 'Get fact' button
-getFactButton.addEventListener("click", getCatFact);
+randomFactButton.addEventListener("click", getCatFact);
 
 // get element to display cat fact in
 const factElement = document.querySelector("#catFact p");
@@ -35,11 +35,8 @@ async function getCatFact() {
 
 /* GET AND DISPLAY A RANDOM BREED'S IMAGE AND DESCRIPTION SCRIPTS*/
 
-// get "replace kittie "button when clicked will fetch and display a new cat image
-const getReplaceKittieButton = buttons[0];
-
 // display breed information when clicking 'replace kittie' button
-getReplaceKittieButton.addEventListener("click", getRandomImageOfBreed);
+replaceKittieButton.addEventListener("click", getRandomImageOfBreed);
 
 // get span element to display cat breed
 catBreedSpan = document.querySelector("#breedContainer span");
