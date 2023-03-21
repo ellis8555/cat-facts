@@ -53,10 +53,14 @@ function displayCatDescription(description) {
 }
 
 // display the image on the page
-function displayCatImage(isImage, breed, thisBreedsData) {
+async function displayCatImage(imageReferenceId, breed) {
   let breedImage;
-  if (isImage) {
-    breedImage = thisBreedsData.image.url;
+  if (imageReferenceId) {
+    const reference_image_id_link = await fetch(
+      `https://api.thecatapi.com/v1/images/${imageReferenceId}`
+    );
+    const catsApi = await reference_image_id_link.json();
+    breedImage = catsApi.url;
     imageHolder.src = breedImage;
     displayCatBreed(breed);
   } else {
@@ -91,8 +95,8 @@ async function getRandomImageOfBreed() {
   // get a description of the breed
   const description = getRandomBreed.description;
   displayCatDescription(description);
-  // checks if there is an image for this breed
-  const isImage = "image" in getRandomBreed;
+  // get reference to the cat's image
+  const imageReferenceId = getRandomBreed.reference_image_id;
   // if there is an image display it otherwise display default image
-  displayCatImage(isImage, breed, getRandomBreed);
+  displayCatImage(imageReferenceId, breed);
 }
