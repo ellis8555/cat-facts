@@ -8,12 +8,16 @@
   <head>
     <title>Cats</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1 id="pageHeading">Kittie facts!</h1>
-    <img src="kittie.png" alt="No kittie for you!" />
-    <button id="replaceKittie">Replace Kittie</button>
+    <div id="randomKittieContainer">
+      <h1 id="pageHeading">Kittie facts!</h1>
+      <img src="kittie.png" alt="No kittie for you!" />
+      <button id="replaceKittieButton">Replace Kittie</button>
+    </div>
+
     <div id="breedContainer">
       <p>Pictured Breed: <span>General Kittie</span></p>
       <p>
@@ -23,9 +27,7 @@
       </p>
     </div>
     <div id="factContainer">
-      <div>
-        <button>Random cat fact!</button>
-      </div>
+      <button id="randomFactButton">Random cat fact!</button>
       <div id="catFact">
         <h1>Fact!</h1>
         <p></p>
