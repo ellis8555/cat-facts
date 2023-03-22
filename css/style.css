@@ -36,7 +36,10 @@ about: Kitties
     margin: auto;
     text-align: center;
     font-size:x-large;
-    color:white;
+    background-color:chocolate;
+    border-radius: .25rem;
+    padding: 1rem;
+    margin-top: 1rem;
 }
 
 /* HTML ELEMENTS VIA ATTRIBUTE */
@@ -74,11 +77,13 @@ p {
     height: 5vh;
     background-color:darkmagenta;
     color: darkgrey;
+    margin-top: 1rem;
+    
 }
 
 /* replace kittie button */
 
-button {
+#replaceKittie {
     float: right;
     clear: both;
     margin-right: 15%;
@@ -87,3 +92,84 @@ button {
     background-color:darkmagenta;
     color: darkgrey; 
 }
+
+@media screen and (max-width: 965px) {
+     
+        #pageHeading {
+            display:block;
+            padding: .25%;
+            border-radius: 2%;
+            width: fit-content;
+            margin: auto;
+            text-align: center;
+            font-size: xxx-large;
+            float:none;
+        }
+
+        img[alt='No kittie for you!'] {
+            display: block;
+            width: initial;
+            height: 35vh;
+            border-radius: 2%;
+            object-fit: cover;
+            float: none; 
+            margin: auto;
+            }
+
+            #replaceKittie {
+                display: block;
+                float: none;
+                clear: none;
+                margin: auto;
+                width: 15vw;
+                height: 5vh;
+                margin-top: 1rem;
+                background-color:darkmagenta;
+                color: darkgrey; 
+            }
+    
+            #breedContainer {
+                display:block;
+                font-size:x-large;
+                background-color:darkseagreen;
+                border-radius: 5px;
+                color:white;
+                width: 50vh;
+                margin: auto;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                padding: 1rem;
+            }
+
+            #factContainer {
+                display: flex;
+                align-items:first baseline;
+                gap: 1rem;
+                clear:none;
+                width: 50%;
+                margin: auto;
+                text-align: center;
+                font-size:x-large;
+                color:white;
+            }
+  }
+
+  @media screen and (max-width: 800px) {
+    #factContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #factContainer div:first-child{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    } 
+    #factContainer div:first-child button{
+        margin: .25rem 0;
+    }
+
+
+  }
