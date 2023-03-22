@@ -3,6 +3,10 @@ author: Lonnie
 about: Kitties
 */
 
+html {
+    width: 100vw;
+}
+
 /* ID STYLES */
 
 #pageHeading {
@@ -72,7 +76,7 @@ p {
 
 /* BUTTONS */
 
-#factContainer button {
+#randomFactButton {
     width: 15vw;
     height: 5vh;
     background-color:darkmagenta;
@@ -83,7 +87,7 @@ p {
 
 /* replace kittie button */
 
-#replaceKittie {
+#replaceKittieButton {
     float: right;
     clear: both;
     margin-right: 15%;
@@ -93,7 +97,7 @@ p {
     color: darkgrey; 
 }
 
-@media screen and (max-width: 965px) {
+@media screen and (max-width: 920px) {
      
         #pageHeading {
             display:block;
@@ -116,7 +120,7 @@ p {
             margin: auto;
             }
 
-            #replaceKittie {
+            #replaceKittieButton {
                 display: block;
                 float: none;
                 clear: none;
@@ -134,7 +138,7 @@ p {
                 background-color:darkseagreen;
                 border-radius: 5px;
                 color:white;
-                width: 50vh;
+                width: 80vw;
                 margin: auto;
                 margin-top: 1rem;
                 margin-bottom: 1rem;
@@ -146,7 +150,7 @@ p {
                 align-items:first baseline;
                 gap: 1rem;
                 clear:none;
-                width: 50%;
+                width: 80vw;
                 margin: auto;
                 text-align: center;
                 font-size:x-large;
@@ -154,22 +158,49 @@ p {
             }
   }
 
-  @media screen and (max-width: 800px) {
-    #factContainer {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
+  @media screen and (max-width: 500px) {
+    img[alt='No kittie for you!'] {
+        width:80vw;
+        height: 35vh;
+        border-radius: 2%;
+        object-fit: cover;
+        float: none;
+        margin: auto;
+        margin-bottom: .25rem;
+        }
 
-    #factContainer div:first-child{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    } 
-    #factContainer div:first-child button{
-        margin: .25rem 0;
-    }
+        #replaceKittieButton {
+            float: none;
+            clear: both;
+            margin: auto;
+            width: fit-content;
+            height: 5vh;
+            background-color:darkmagenta;
+            color: darkgrey; 
+        }
 
+        #factContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            clear:none;
+            width: 80vw;
+            margin: auto;
+            text-align: center;
+            font-size: inherit;
+            background-color:chocolate;
+            border-radius: .25rem;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        #randomFactButton {
+            width: fit-content;
+            height: 5vh;
+            background-color:darkmagenta;
+            color: darkgrey;
+            margin-top: 1rem;    
+            margin: auto;      
+        }
 
   }
