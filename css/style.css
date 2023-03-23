@@ -80,7 +80,7 @@ p {
     width: 15vw;
     height: 5vh;
     background-color:darkmagenta;
-    color: darkgrey;
+    color: white;
     margin-top: 1rem;
     
 }
@@ -94,7 +94,7 @@ p {
     width: 15vw;
     height: 5vh;
     background-color:darkmagenta;
-    color: darkgrey; 
+    color: white; 
 }
 
 @media screen and (max-width: 920px) {
@@ -128,8 +128,7 @@ p {
                 width: 15vw;
                 height: 5vh;
                 margin-top: 1rem;
-                background-color:darkmagenta;
-                color: darkgrey; 
+
             }
     
             #breedContainer {
@@ -175,8 +174,8 @@ p {
             margin: auto;
             width: fit-content;
             height: 5vh;
-            background-color:darkmagenta;
-            color: darkgrey; 
+            margin-top: .75rem;
+ 
         }
 
         #factContainer {
@@ -197,8 +196,6 @@ p {
         #randomFactButton {
             width: fit-content;
             height: 5vh;
-            background-color:darkmagenta;
-            color: darkgrey;
             margin-top: 1rem;    
             margin: auto;      
         }
